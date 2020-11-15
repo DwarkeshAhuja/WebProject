@@ -3,9 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DesiCart - Shopping World</title>
+    <title>DesiCart - Buying & Selling Made Easy </title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/section_main.css">
+    <style> 
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector("#top_header_menubtn>#button").addEventListener("click", function(){
+                document.querySelector("#top_nav").style.width = "100%";
+            });
+            document.getElementById("close").addEventListener("click", function(){          
+                document.querySelector("#top_nav").style.width = "0%"; 
+            });
+        });
+    </script>
 </head>
 <body>
-    <h1>DesiCart</h1>
+    <div id="root">
+
+        <header id="top_header" class="clearfix">
+            
+            <div id="top_header_logo">
+				<div id="logo">
+					<a href="./index.html"><img style="border-radius: 7px;" src="./images/logo.png" width="100%"></a>
+				</div>	
+                <div id="top_header_menubtn"><img id="button" src="https://www.flaticon.com/svg/static/icons/svg/966/966313.svg"></div>
+                <h1>DesiCart</h1>
+                <p>Buying & Selling Made Easy</p>
+            </div>
+
+            <nav id="top_header_nav">
+                <ul class="clearfix">
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Hi, </a>
+                        <div class="dropdown_content">
+                            <ul>
+                                <li><a href="signin.html">Sign In</a></li>
+                                <li><a href="signup.html">Sign Up</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Shop</a>
+                        <div class="dropdown_content">
+                            <ul>
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Orders</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <form id="top_header_search" class="clearfix">
+                <input type="search" name="search" id="searchInput" placeholder="Search here..." />
+                <input type="submit" value="Search" id="searchBtn" />
+            </form>
+        </header>
+  
+        <nav id="top_nav">
+            <ul class="clearfix">
+                <li class="close" id="close">X</li>
+                <li class="dropdown">
+                    <a class="dropbtn">Catagories</a>
+                    <div class='dropdown_content'>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li class="dropdown_title">More Catagories</li>
+                            <li><a href="#">Mobiles & Tablets</a></li>
+                            <li><a href="#">Gym</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li class="dropdown_title">More Catagories</li>
+                            <li><a href="#">Mobiles & Tablets</a></li>
+                            <li><a href="#">Gym</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li class="dropdown_title">More Catagories</li>
+                            <li><a href="#">Mobiles & Tablets</a></li>
+                            <li><a href="#">Gym</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li class="dropdown_title">More Catagories</li>
+                            <li><a href="#">Mobiles & Tablets</a></li>
+                            <li><a href="#">Gym</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li class="dropdown_title">More Catagories</li>
+                            <li><a href="#">Mobiles & Tablets</a></li>
+                            <li><a href="#">Gym</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li class="dropdown_title">More Catagories</li>
+                            <li><a href="#">Mobiles & Tablets</a></li>
+                            <li><a href="#">Gym</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Brands</a>
+                    <div class='dropdown_content'>
+                        <ul>
+                            <li><h5 class="dropdown_title">Popular</h5></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">One Plus</a></li>
+                            <li><a href="#">Balck Berry</a></li>
+                            <li><a href="#">Oppo</a></li>
+                            <li><a href="#">Hawaei</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">A</h5></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">One Plus</a></li>
+                            <li><a href="#">Balck Berry</a></li>
+                            <li><a href="#">Oppo</a></li>
+                            <li><a href="#">Hawaei</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">B</h5></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">One Plus</a></li>
+                            <li><a href="#">Balck Berry</a></li>
+                            <li><a href="#">Oppo</a></li>
+                            <li><a href="#">Hawaei</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Men</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Women</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Babies & Kids</a>
+                </li>
+
+                <li>
+                    <a href="#">Offers & Deals</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main" class="clearfix">
+            <aside class="ads_offers clearfix">
+                <span class="arrowBtn left">&lt;</span>
+                <span class="arrowBtn right">&gt;</span>
+                <figure class="clearfix">
+                    <img src="https://rukminim1.flixcart.com/www/3376/3376/promos/07/11/2020/36e34a0f-5c78-4d2f-be98-7af299977133.jpg?q=90">
+                    <img src="https://rukminim1.flixcart.com/flap/844/140/image/e66ea2773fc36f8a.jpg?q=50">
+                    <img src="https://rukminim1.flixcart.com/flap/844/140/image/e4cae5d5c18fd855.jpg?q=50"> 
+                </figure>
+            </aside>
+
+            <section class="aside_right">
+                <header><h2>Best Deals of the week</h2></header>
+                <div class="items_div clearfix">
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/jr9iwsw0/bed-mattress/5/y/n/queen-5-60-75-athena-therapedic-coir-flipkart-perfect-homes-original-imafd2fgvyvvubad.jpeg?q=70">
+                        </div>
+                        <div class="item_title">Mattresses</div>
+                        <div class="item_price discount">Min 80% off</div>
+                        <div class="item_desc">Top deals on Mattresses</div>
+                    </div>
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/jfbfde80/camera/n/r/n/canon-eos-eos-3000d-dslr-original-imaf3t5h9yuyc5zu.jpeg?q=70">
+                        </div>
+                        <div class="item_title">Cameras</div>
+                        <div class="item_price discount">Min 50% off</div>
+                        <div class="item_desc">Only 4 Hours Left</div>
+                    </div>
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/flap/200/200/image/e9740e53035ed10d.jpg?q=70">
+                        </div>
+                        <div class="item_title">Titan Watches</div>
+                        <div class="item_price discount">Min 15% off</div>
+                        <div class="item_desc">Top deals on Watches</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <header><h2>Offers</h2></header>
+                <div class="items_div clearfix">
+
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/kcgk1ow0/headphone/n/u/a/235v2-fast-charging-boat-original-imaftk6us4af7bca.jpeg?q=70">
+                        </div>
+                        <div class="item_title">Headphones</div>
+                        <div class="item_price discount">Min 80% off</div>
+                        <div class="item_desc">Top deals on Hedphones</div>
+                    </div>
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/ked56kw0/television/r/m/a/lg-43lm5650pta-43lm5650pta-original-imafvfq5jpcjzh2m.jpeg?q=70">
+                        </div>
+                        <div class="item_title">Televisions</div>
+                        <div class="item_price discount">Min 60% off</div>
+                        <div class="item_desc">Top deals on Televisions</div>
+                    </div>
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/j16qm4w0/bedroom-set/c/h/y/na-particle-board-mayflower-bedroom-set-2-bed-wardrobe-spacewood-original-imaeptsaf6g4gtf6.jpeg?q=70">
+                        </div>
+                        <div class="item_title">Furniture Sale</div>
+                        <div class="item_price discount">Min 25% off</div>
+                        <div class="item_desc">Top deals on Furniture</div>
+                    </div>
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/kf75fgw0/office-study-chair/z/g/w/carbon-steel-low-back-royal-ergonomic-desk-mesh-chair-in-brown-original-imafvzvprhk3xqdc.jpeg?q=70">
+                        </div>
+                        <div class="item_title">Portable Laptop Tables</div>
+                        <div class="item_price discount">From $22</div>
+                        <div class="item_desc">Top deals on Laptop Tables</div>
+                    </div>
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/jr9iwsw0/bed-mattress/5/y/n/queen-5-60-75-athena-therapedic-coir-flipkart-perfect-homes-original-imafd2fgvyvvubad.jpeg?q=70">
+                        </div>
+                        <div class="item_title">Mattresses</div>
+                        <div class="item_price discount">Min 80% off</div>
+                        <div class="item_desc">Top deals on Mattresses</div>
+                    </div>
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/jfbfde80/camera/n/r/n/canon-eos-eos-3000d-dslr-original-imaf3t5h9yuyc5zu.jpeg?q=70">
+                        </div>
+                        <div class="item_title">Cameras</div>
+                        <div class="item_price discount">Min 50% off</div>
+                        <div class="item_desc">Only 4 Hours Left</div>
+                    </div>
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/flap/200/200/image/e9740e53035ed10d.jpg?q=70">
+                        </div>
+                        <div class="item_title">Titan Watches</div>
+                        <div class="item_price discount">Min 15% off</div>
+                        <div class="item_desc">Top deals on Watches</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div id="footer_nav" class="clearfix">
+                <a href="about.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="terms.html">Our Policy</a>
+                <a href="help.html">Help</a>
+            </div>
+
+            <div id="footer_social" class="clearfix">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Youtube</a>
+            </div>
+            <div id="copyright">
+                <p>&copy;2020 DesiCart.com</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
