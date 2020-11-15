@@ -1,0 +1,124 @@
+.section{
+    display: block;
+    width: 75%;
+    padding: 10px;
+    float: left;
+}
+
+.aside_right{
+    width: 25%;    
+    padding: 10px;
+    float: right;
+}
+
+.section header h2, .aside_right h2{
+    padding: 6px 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.items_div{
+    border-radius: 5px;
+    padding: 0 15px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.item{
+    width: 20%;
+    padding: 15px 10px;
+    text-align: center;
+    float: left;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item:hover .item_image img{
+    transform: scale(1.05);
+}
+
+.aside_right .item{width: 100%;}
+
+.item_image{height: 200px;margin-bottom: 15px;}
+.item_image img{max-width: 100%;max-height: 100%;}
+
+.item_title, .item_price, .item_desc{padding-bottom: 5px}
+
+.item_title{font-size: .9em;text-overflow: ellipsis;}
+.item_price{font-size: 1em;}
+.item_desc{font-size: .8em;}
+.discount{color: green;}
+
+/* ------- main section -------*/
+
+.ads_offers{position: relative;height: 200px;margin: 10px 0;}
+
+.ads_offers figure>img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;left: 0;
+	overflow:hidden;
+}
+
+.arrowBtn{
+	z-index: 2;
+	background: white;padding: 12px;border-radius:5px;
+	font-size: 1.3em;
+	position:absolute;top:50%;
+	transform: translateY(-50%);
+	font-family: consolas, monospace;
+}
+.arrowBtn:hover{box-shadow: 0px 0px 1px 0px grey;cursor: pointer;}
+.left{left: 1%;;}
+.right{right: 1%;}
+
+/* ------- footer -------*/
+
+#footer {
+	background: black;
+}
+
+#footer_nav, #footer_social{text-align: center;padding: 20px;}
+
+#footer_nav a, #footer_social a{
+	display: block;
+	width: 25%;
+	padding: 15px 30px;
+	float: left;
+}
+#footer a:link, #footer a:visited{
+	color: white;
+	font-size: .8em;
+	text-decoration: none;
+	color: #bbb;
+}
+
+.active:link, .active:visited{background: darkgrey;color: black !important;}
+
+#copyright{
+	padding: 20px;
+	border-top: solid 1px #ccc;
+	color: #bbb;text-align:center;}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
