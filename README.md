@@ -6,4 +6,4 @@
 # Dwarkesh Ahuja
 # Dalveer Singh
 # Mandeep Kaur
-# Varinder Singh
+# Virender Singh
