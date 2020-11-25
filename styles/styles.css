@@ -48,7 +48,7 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
 }
 #searchInput{
     width: 80%;
-    padding: 7px;
+    padding: 9px;
     outline: none;
     border: none;
     float:left;
@@ -57,7 +57,7 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
 }
 #searchBtn{
     width: 20%;
-    padding: 7px;
+    padding: 9px;
     outline: none;
     border: none;
     float: left;
@@ -220,7 +220,7 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
     .dropbtn, #top_nav> ul> li>a{
         font-size: 0.9em;
     }
-    #searchBtn, #searchInput{padding: 10px;}
+    #searchBtn, #searchInput{padding: 12px;}
     #top_header h1, #top_header p{text-align: right;color: #dcd500;padding-right:10px;}
     #top_header h1{font-size: 1.4em;}
     #top_header p{font-size: .8em;}

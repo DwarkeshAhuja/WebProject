@@ -7,17 +7,19 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/section_main.css">
 	<link rel="stylesheet" type="text/css" href="styles/form.css">
-    <style>
-        
+    <style> 
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function(){
+            topNav = document.querySelector("#top_nav");
             document.querySelector("#top_header_menubtn>#button").addEventListener("click", function(){
-                document.querySelector("#top_nav").style.width = "100%";
+                topNav.style.width = "100%";
+                topNav.style.paddingLeft = "30px";
+                topNav.style.paddingRight = "30px";
             });
             document.getElementById("close").addEventListener("click", function(){          
-                document.querySelector("#top_nav").style.width = "0%";
-                
+                topNav.style.width = "0%";
+                topNav.style.padding = "0px";
             });
         });
     </script>
@@ -28,24 +30,22 @@
         <header id="top_header" class="clearfix">
             
             <div id="top_header_logo">
-				<div id="ligo" style="float: right;width:20%;">
+				<div id="logo">
 					<a href="./index.html"><img style="border-radius: 7px;" src="./images/logo.png" width="100%"></a>
-				</div>
-				
+				</div>	
                 <div id="top_header_menubtn"><img id="button" src="https://www.flaticon.com/svg/static/icons/svg/966/966313.svg"></div>
-	
                 <h1>DesiCart</h1>
                 <p>Buying & Selling Made Easy</p>
             </div>
-            
+
             <nav id="top_header_nav">
                 <ul class="clearfix">
                     <li class="dropdown">
                         <a href="#" class="dropbtn">Hi, </a>
                         <div class="dropdown_content">
                             <ul>
-                                <li><a href="#">Profile</a></li>
-                                <li><a href="#">Logout?</a></li>
+                                <li><a href="signin.html">Sign In</a></li>
+                                <li><a href="signup.html">Sign Up</a></li>
                             </ul>
                         </div>
                     </li>
@@ -65,7 +65,6 @@
                 <input type="search" name="search" id="searchInput" placeholder="Search here..." />
                 <input type="submit" value="Search" id="searchBtn" />
             </form>
-
         </header>
   
         <nav id="top_nav">
