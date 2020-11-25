@@ -25,12 +25,15 @@
     padding: 12px 5px;
 }
 
-#form_container input{
+#form_container input, #form_container textarea{
     font-size: .7em;
     color: rgb(17, 17, 17);
     border-radius: 5px;
     box-shadow: 1px 1px 1px -1px grey;
 }
+
+#message_container{margin-bottom: 7px;}
+#form_container textarea{display: block;width: 100%;padding: 5px;}
 
 #form_container label{font-weight: bold;}
 
@@ -43,7 +46,7 @@
     padding: 3px 20px 7px 20px;
 }
 .btn{
-    padding: 10px 12px;
+    padding: 12px;
     border-radius: 3px;
     display: inline-block;
     margin: 10px 0;
@@ -88,8 +91,10 @@
 
     .btn{
         width: 100px;
+        padding: 12px;
+        font-size: .9em !important;
     }
-    
+    #message_container{padding-left: 10px;}
     #form_container label, input, .field >input{
         font-size: .8em;
         display: inline-block;
