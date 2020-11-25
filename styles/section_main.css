@@ -108,3 +108,46 @@
 	width: 100%;
 }
 
+
+
+/* -------- media queries -------- */
+
+@media only screen and (max-width: 800px){
+
+	.section, .aside_right{
+		width: 100%;
+		float: none;
+	}
+	.items_div{
+		border-radius: 5px;
+		padding: 15px 10px;
+	}
+	.item, .aside_right .item{
+		width: 50%;
+		padding: 10px;
+	}
+
+	.section header h2, .aside_right h2{
+		font-size: 1em;
+		font-weight: bold;
+	}
+	.item_image{width: 100%;height: auto;margin-bottom: 10px;}
+	.item_title{font-size: .8em;text-overflow: ellipsis;}
+	.item_price{font-size: .9em;}
+	.item_desc{font-size: .7em;}
+
+	.ads_offers{position: relative;height: 90px;margin: 10px;}
+
+	.arrowBtn{
+		display: none;
+	}
+
+	#footer_nav a, #footer_social a{
+		width: 25%;
+		padding: 10px;
+	}
+	#footer a:link, #footer a:visited{
+		font-size: .6em;
+	}
+	#copyright{font-size: .7em;}
+}
