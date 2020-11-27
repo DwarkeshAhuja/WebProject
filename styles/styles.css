@@ -11,11 +11,7 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
     background-color: #0046be;
     width: 100%;
     position: relative;
-    padding: 0 5px;
-}
-
-#top_header_logo , #top_header_search{
-    padding: 8px;
+    padding: 10px 8px 5px 0px;
 }
 
 #top_header_logo{
@@ -23,16 +19,72 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
     width: 60%;
     position: relative;
 }
-
-#log img{
-    height: 90%;width: 90%;margin-top: 5%;padding:5%;
+#logo{display: none;}
+#logo img{
+    width: 65px;
+    height: 100%;
 }
+
+#top_header_menubtn{position: absolute;height: 100%;top:0;width: 50px;}
+#top_header h1, #top_header p{text-align: left;color: #dcd500;margin-left: 50px;display:block;}
+#logo img{
+    margin-left:53px;
+}
+#top_header_menubtn #button {height: 100%;width: 100%;color:white;}
+#top_header_menubtn #button:hover {cursor: pointer;}
+#top_header h1{
+    padding-bottom: 3px;
+    font-size: 1.1em;
+    text-shadow: 0px 3px 5px rgba(0,0,0, .3);
+}
+#top_header h1 a:link{color:inherit;text-decoration: none;}
+#top_header h1 a:visited{color:inherit;}
+#top_header p{
+    color: #dcd500;
+    font-size: .5em;
+    text-shadow: 0 0 1px rgba(0,0,0,.3);
+}
+
+#top_header_search{
+    width: 100%;
+    clear: both;
+    margin: auto;
+    padding: 0px 10px;
+    padding-top: 5px;
+}
+#searchInput{
+    width: 100%;
+    padding: 10px;
+    padding-right: none;
+    outline: none;
+    border: none;
+    float: left;
+    border-radius: 5px;
+    font-size: .6em;
+}
+#searchBtn{
+    width: 45px;
+    margin-left: -45px;
+    outline: none;
+    border: none;
+    color:transparent;
+    padding: 8px;
+    float: left;
+    background-color: transparent;
+    background-image: url("https://www.flaticon.com/svg/static/icons/svg/639/639375.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: 20px 20px;
+}
+#searchBtn:hover{cursor: pointer;box-shadow: 0px 0px 1px 0px grey;}
+
+#top_header .dropdown_content{position: absolute;left:0;top:100%;}
 
 
 #top_header_nav{
     width: 40%;
     float: right;
-    margin-top: 10px;
     text-align: center;
     position: relative;
     max-width: 200px;
@@ -40,66 +92,19 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
 }
 #top_header_nav .dropdown_content a{color: black !important;}
 
-#top_header_search{
-    width: 100%;
-    clear: both;
-    margin: auto;
-    padding-top: 0;
-}
-#searchInput{
-    width: 80%;
-    padding: 9px;
-    outline: none;
-    border: none;
-    float:left;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-#searchBtn{
-    width: 20%;
-    padding: 9px;
-    outline: none;
-    border: none;
-    float: left;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-#top_header .dropdown_content{position: absolute;left:0;top:100%;}
-
-#top_header_menubtn{position: absolute;height: 100%;top:0;width: 50px;}
-#top_header h1, #top_header p{text-align: left;color: #dcd500;margin-left: 50px;display:none;}
-#top_header_menubtn #button {height: 90%;width: 90%;margin-top: 5%;color:white;padding: 5%;}
-#top_header_menubtn #button:hover {cursor: pointer;}
-#top_header h1{
-    padding-bottom: 3px;
-    font-size: 1.1em;
-    text-shadow: 0px 3px 5px rgba(0,0,0, .3);
-}
-#top_header p{
-    color: #dcd500;
-    font-size: .5em;
-    text-shadow: 0 0 1px rgba(0,0,0,.3);
-}
-
 #top_header_nav ul, #top_nav ul {list-style-type: none;}
 #top_header_nav >ul >li{display: inline-block;}
 #top_header_nav >ul >li a{
     display: inline-block;
     text-decoration: none;
     color: #bdd5ff;
-    font-size: .7em;
+    font-size: .6em;
     padding: 4px 7px;
 }
 #top_header_nav ul li a:hover{
     color: #ffffff;
 }
 
-#logo img{
-    float: left;
-    width:20%;
-    margin-left:50px;
-}
 
 
 /* ------ top nav ------ */
@@ -107,7 +112,7 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
 #top_nav{
     overflow-x: hidden;
     overflow-y: auto;
-    box-shadow: 0px 0px 1px 1px rgba(0,0,0, .3);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0, .3);
     z-index: 5;
     position: fixed;
     left:0;top:0;
@@ -125,7 +130,7 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
     display: block;
     outline:none;
     color: #4e4e4e;
-    padding: 10px 13px;
+    padding: 14px 13px;
     font-weight: bold;
     font-size: 0.9em;
     text-decoration: none;
@@ -197,11 +202,12 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 @media only screen and (min-width: 800px){
     #top_header_menubtn{display: none;}
-    #top_header{padding: 0 15px;}
+    #top_header{padding:8px 15px;}
     #top_header_logo{
         float: left;
-        width: 30%;
+        width:30%;
     }
+    #logo img{width: 82px;}
     
     #top_header_nav{
         width: 30%;
@@ -211,8 +217,9 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
         float: left;
         width: 40%;
         left: 30%;
+        padding: 10px 15px;
         bottom: 50%;
-        transform: translateY(60%);
+        transform: translateY(50%);
     }
     #top_header_nav >ul >li a{
         font-size: .8em;
@@ -220,7 +227,7 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
     .dropbtn, #top_nav> ul> li>a{
         font-size: 0.9em;
     }
-    #searchBtn, #searchInput{padding: 12px;}
+    #searchBtn, #searchInput{padding: 12px;font-size: .8em;}
     #top_header h1, #top_header p{text-align: right;color: #dcd500;padding-right:10px;}
     #top_header h1{font-size: 1.4em;}
     #top_header p{font-size: .8em;}
