@@ -10,12 +10,24 @@
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function(){
+            topNav = document.querySelector("#top_nav");
             document.querySelector("#top_header_menubtn>#button").addEventListener("click", function(){
-                document.querySelector("#top_nav").style.width = "100%";
+                topNav.style.width = "100%";
+                topNav.style.paddingLeft = "30px";
+                topNav.style.paddingRight = "30px";
             });
             document.getElementById("close").addEventListener("click", function(){          
-                document.querySelector("#top_nav").style.width = "0%"; 
-            });
+                topNav.style.width = "0%";
+                topNav.style.padding = "0px";
+            }); 
+
+            items = document.getElementsByClassName("item");
+            for(i=0;i<items.length;i++){
+                items[i].addEventListener('click', function(e){
+                    e.preventDefault();
+                    window.location.href ="product_details.html";
+                });
+            }
         });
     </script>
 </head>
@@ -26,13 +38,12 @@
             
             <div id="top_header_logo">
 				<div id="logo">
-					<a href="./index.html"><img style="border-radius: 7px;" src="./images/logo.png" width="100%"></a>
+					<a href="./index.html"><img style="border-radius: 7px;" src="./images/logo.png"></a>
 				</div>	
                 <div id="top_header_menubtn"><img id="button" src="https://www.flaticon.com/svg/static/icons/svg/966/966313.svg"></div>
-                <h1>DesiCart</h1>
+                <h1><a href="index.html">DesiCart</a></h1>
                 <p>Buying & Selling Made Easy</p>
             </div>
-
             <nav id="top_header_nav">
                 <ul class="clearfix">
                     <li class="dropdown">
@@ -55,10 +66,9 @@
                     </li>
                 </ul>
             </nav>
-
             <form id="top_header_search" class="clearfix">
                 <input type="search" name="search" id="searchInput" placeholder="Search here..." />
-                <input type="submit" value="Search" id="searchBtn" />
+                <input type="submit" value="" id="searchBtn" />
             </form>
         </header>
   
