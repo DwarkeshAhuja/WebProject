@@ -6,45 +6,47 @@
     <title>DesiCart - Buying & Selling Made Easy </title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/section_main.css">
-    <style>
-        
+    <link rel="stylesheet" type="text/css" href="styles/product.css">
+    <style> 
+        .section{width: 100%;margin: auto;}
+        .items_div, .section header{width: 95%;margin: auto;}
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function(){
+            topNav = document.querySelector("#top_nav");
             document.querySelector("#top_header_menubtn>#button").addEventListener("click", function(){
-                document.querySelector("#top_nav").style.width = "100%";
+                topNav.style.width = "100%";
+                topNav.style.paddingLeft = "30px";
+                topNav.style.paddingRight = "30px";
             });
             document.getElementById("close").addEventListener("click", function(){          
-                document.querySelector("#top_nav").style.width = "0%";
-                
+                topNav.style.width = "0%";
+                topNav.style.padding = "0px";
             });
         });
     </script>
 </head>
 <body>
     <div id="root">
-
         <header id="top_header" class="clearfix">
             
             <div id="top_header_logo">
-				<div id="ligo" style="float: right;width:20%;">
+				<div id="logo">
 					<a href="./index.html"><img style="border-radius: 7px;" src="./images/logo.png" width="100%"></a>
-				</div>
-				
+				</div>	
                 <div id="top_header_menubtn"><img id="button" src="https://www.flaticon.com/svg/static/icons/svg/966/966313.svg"></div>
-	
                 <h1>DesiCart</h1>
                 <p>Buying & Selling Made Easy</p>
             </div>
-            
+
             <nav id="top_header_nav">
                 <ul class="clearfix">
                     <li class="dropdown">
                         <a href="#" class="dropbtn">Hi, </a>
                         <div class="dropdown_content">
                             <ul>
-                                <li><a href="#">Profile</a></li>
-                                <li><a href="#">Logout?</a></li>
+                                <li><a href="signin.html">Sign In</a></li>
+                                <li><a href="signup.html">Sign Up</a></li>
                             </ul>
                         </div>
                     </li>
@@ -64,7 +66,6 @@
                 <input type="search" name="search" id="searchInput" placeholder="Search here..." />
                 <input type="submit" value="Search" id="searchBtn" />
             </form>
-
         </header>
   
         <nav id="top_nav">
@@ -185,44 +186,120 @@
                 </li>
             </ul>
         </nav>
+
+
         <main id="main" class="clearfix">
-            
-            <section id="product_container">
-                <header>
-                    <h2><span class="price"> $100</span>Title</h2>
+
+            <section id="product" class="clearfix">
+
+                <header class="details">
+                    <h2>LG's 86" UN85 LG UHD TV with ThinQ® AI</h2>
+                    <div class="price">$1000</div> 
                 </header>
-                <figure>
-                    <img src="https://rukminim1.flixcart.com/image/200/200/ked56kw0/television/r/m/a/lg-43lm5650pta-43lm5650pta-original-imafvfq5jpcjzh2m.jpeg?q=70">
-                </figure>
-                <div id="product_details">
-                    <p>These are product detsails</p>
-                </div>
-                <div id="product_specs">
-                    <table>
-                        <tr>
-                            <td>Key</td><td>Value</td>
-                        </tr>
-                        <tr>
-                            <td>Key</td><td>Value</td>
-                        </tr>
-                        <tr>
-                            <td>Key</td><td>Value</td>
-                        </tr>
-                        <tr>
-                            <td>Key</td><td>Value</td>
-                        </tr>
-                    </table>
-                </div>
-            </section>    
 
+                <div id="product_images">
+                    <figure >
+                        <img src="https://rukminim1.flixcart.com/image/416/416/ka5oia80/television/5/d/e/samsung-ua50tue60akxxl-original-imafrs6zp3afqgjf.jpeg?q=70">
+                    </figure>
+                    <div id="buttons" class="clearfix">
+                        <div class="orange">Add to Cart</div>
+                        <div class="green">Buy</div>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="specs">
+                        <p class="description">The Real 4K TV for all your entertainment needs
+                            LG UHD TV was made to entertain by taking everything you watch to a new level. Whether it's cinema, sports, or games, it delivers real 4K images with vivid colour and fine detail. Enjoy more realistic images in four times the resolution of Full HD.</p>  
+
+                        <table>
+                            <caption>Specifications</caption>
+                            <tr>
+                                <td>Display Type</td>
+                                <td>4K UHD</td>
+                            </tr>
+                            <tr>
+                                <td>Backlight Type</td>
+                                <td>Direct</td>
+                            </tr>
+                            <tr>
+                                <td>Display Resolution</td>
+                                <td>3840 x 2160</td>
+                            </tr>
+                            <tr>
+                                <td>Picture Processor</td>
+                                <td>Quad Core Processor 4K</td>
+                            </tr>
+                            <tr>
+                                <td>Refresh Rate</td>
+                                <td>TruMotion 120 (Native 60Hz)</td>
+                            </tr>
+                            <tr>
+                                <td>HDR (High Dynamic Range)</td>
+                                <td>Active HDR (HDR10, HLG)</td>
+                            </tr>
+                            <tr>
+                                <td>Resolution Upscaler</td>
+                                <td>4K Upscaler</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <header><h2>Other Similar Products</h2></header>
+                <div class="items_div clearfix">
+
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/j16qm4w0/bedroom-set/c/h/y/na-particle-board-mayflower-bedroom-set-2-bed-wardrobe-spacewood-original-imaeptsaf6g4gtf6.jpeg?q=70">
+                        </div>
+                        <div class="item_title">Furniture Sale</div>
+                        <div class="item_price discount">Min 25% off</div>
+                        <div class="item_desc">Top deals on Furniture</div>
+                    </div>
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/kf75fgw0/office-study-chair/z/g/w/carbon-steel-low-back-royal-ergonomic-desk-mesh-chair-in-brown-original-imafvzvprhk3xqdc.jpeg?q=70">
+                        </div>
+                        <div class="item_title">Portable Laptop Tables</div>
+                        <div class="item_price discount">From $22</div>
+                        <div class="item_desc">Top deals on Laptop Tables</div>
+                    </div>
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/jr9iwsw0/bed-mattress/5/y/n/queen-5-60-75-athena-therapedic-coir-flipkart-perfect-homes-original-imafd2fgvyvvubad.jpeg?q=70">
+                        </div>
+                        <div class="item_title">Mattresses</div>
+                        <div class="item_price discount">Min 80% off</div>
+                        <div class="item_desc">Top deals on Mattresses</div>
+                    </div>
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/jfbfde80/camera/n/r/n/canon-eos-eos-3000d-dslr-original-imaf3t5h9yuyc5zu.jpeg?q=70">
+                        </div>
+                        <div class="item_title">Cameras</div>
+                        <div class="item_price discount">Min 50% off</div>
+                        <div class="item_desc">Only 4 Hours Left</div>
+                    </div>
+                    <div class="item">
+                        <div class="item_image">
+                            <img src="https://rukminim1.flixcart.com/flap/200/200/image/e9740e53035ed10d.jpg?q=70">
+                        </div>
+                        <div class="item_title">Titan Watches</div>
+                        <div class="item_price discount">Min 15% off</div>
+                        <div class="item_desc">Top deals on Watches</div>
+                    </div>
+                </div>
+            </section>
         </main>
-
+        <br><br>
         <footer id="footer">
-            <div id="footer_nav clearfix" class="clearfix">
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Our Policy</a>
-                <a href="#">Help</a>
+            <div id="footer_nav" class="clearfix">
+                <a href="about.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="terms.html">Our Policy</a>
+                <a href="help.html">Help</a>
             </div>
 
             <div id="footer_social" class="clearfix">
