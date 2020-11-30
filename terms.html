@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesiCart - Buying & Selling Made Easy </title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/section_main.css">
+    <style>
+        form{
+            width: 85%; padding: 0px 0px 0px 150px;   
+        }
+        p{
+            text-align: justify;
+        }
+        li{
+            text-align: justify;
+        }
+        @media only screen and (max-width: 800px){
+                form{
+                    margin-left: -25%;
+                    width: 120%; padding: 0px 0px 0px 150px;   
+                }
+            }
+        
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector("#top_header_menubtn>#button").addEventListener("click", function(){
+                document.querySelector("#top_nav").style.width = "100%";
+            });
+            document.getElementById("close").addEventListener("click", function(){          
+                document.querySelector("#top_nav").style.width = "0%";
+                
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="root">
+
+        <header id="top_header" class="clearfix">
+            
+            <div id="top_header_logo">
+				
+				
+                <div id="top_header_menubtn"><img id="button" src="https://www.flaticon.com/svg/static/icons/svg/966/966313.svg"></div>
+	
+                <h1>DesiCart</h1>
+                <p>Buying & Selling Made Easy</p>
+            </div>
+            
+            <nav id="top_header_nav">
+                <ul class="clearfix">
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Hi, </a>
+                        <div class="dropdown_content">
+                            <ul>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Logout?</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Shop</a>
+                        <div class="dropdown_content">
+                            <ul>
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Orders</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <form id="top_header_search" class="clearfix">
+                <input type="search" name="search" id="searchInput" placeholder="Search here..." />
+                <input type="submit" value="Search" id="searchBtn" />
+            </form>
+
+        </header>
+  
+        <nav id="top_nav">
+            <ul class="clearfix">
+                <li class="close" id="close">X</li>
+                <li class="dropdown">
+                    <a class="dropbtn">Catagories</a>
+                    <div class='dropdown_content'>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li class="dropdown_title">More Catagories</li>
+                            <li><a href="#">Mobiles & Tablets</a></li>
+                            <li><a href="#">Gym</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li class="dropdown_title">More Catagories</li>
+                            <li><a href="#">Mobiles & Tablets</a></li>
+                            <li><a href="#">Gym</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li class="dropdown_title">More Catagories</li>
+                            <li><a href="#">Mobiles & Tablets</a></li>
+                            <li><a href="#">Gym</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li class="dropdown_title">More Catagories</li>
+                            <li><a href="#">Mobiles & Tablets</a></li>
+                            <li><a href="#">Gym</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li class="dropdown_title">More Catagories</li>
+                            <li><a href="#">Mobiles & Tablets</a></li>
+                            <li><a href="#">Gym</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">Catagories</h5></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Furniture</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li class="dropdown_title">More Catagories</li>
+                            <li><a href="#">Mobiles & Tablets</a></li>
+                            <li><a href="#">Gym</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Brands</a>
+                    <div class='dropdown_content'>
+                        <ul>
+                            <li><h5 class="dropdown_title">Popular</h5></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">One Plus</a></li>
+                            <li><a href="#">Balck Berry</a></li>
+                            <li><a href="#">Oppo</a></li>
+                            <li><a href="#">Hawaei</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">A</h5></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">One Plus</a></li>
+                            <li><a href="#">Balck Berry</a></li>
+                            <li><a href="#">Oppo</a></li>
+                            <li><a href="#">Hawaei</a></li>
+                        </ul>
+                        <ul>
+                            <li><h5 class="dropdown_title">B</h5></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">One Plus</a></li>
+                            <li><a href="#">Balck Berry</a></li>
+                            <li><a href="#">Oppo</a></li>
+                            <li><a href="#">Hawaei</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Men</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Women</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Babies & Kids</a>
+                </li>
+
+                <li>
+                    <a href="#">Offers & Deals</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main" class="clearfix">   
+            <form>
+                <p style="margin-top: 2%; margin-bottom: 1%;">
+                    <b style="font-size: x-large;">Privacy Policy</b>
+                </p>
+                <p>
+                    This privacy policy derives
+                    from principles and is our terms of service that governs our relationship with users and
+                    others who interact with principles, as well as  principles brands, products and
+                    services, which we call the “Services”. 
+                    We may ask you to review and acceptsupplemental terms that apply to your interaction 
+                    with a specific app, product, or service. To the extent those supplemental terms 
+                    conflict with this SRR, the supplemental terms associated with the app, product, 
+                    or service govern with respect to your use of such app, product or service to the extent 
+                    of the conflict.
+                </p>
+                <ol>
+                    <li style="margin-top: 1%;">
+                        <b style="font-size: large;">Privacy</b>
+                        <ul style="list-style: none; margin-top: 1%;">
+                            <li>
+                                Privacy of your information is very important to us.
+                            </li><br>
+                        </ul>
+                    </li>
+                    <li>
+                        <b style="font-size: large;">Sharing Your Content and Information</b><br>
+                            you (user) are the owner of all of the contents that you create. In addition:
+                        <ul style="list-style: lower-alpha; margin-top: 1%;">
+                            <li>
+                                For content that is covered by design property rights, like photos and videos, you
+                                specifically give us the following permission, subject to your privacy settings: you
+                                grant us a non-exclusive, transferable, worldwide license to use any IP content
+                                that you post.
+                            </li>
+                            <li style="margin-top: 1%;">
+                                When you delete content, it is deleted in a manner similar to emptying the
+                                recycle bin on a computer. However, you understand that removed content may
+                                persist in automated backup copies for a reasonable period of time (but would
+                                not be available to others).
+                            </li>
+                            <li style="margin-top: 1%;">
+                                When you use an application, the application may ask for your permission to
+                                access your content and information as well as content and information that
+                                others have shared with you. We require such applications to respect your
+                                privacy, and your agreement with that application will control how the
+                                application can interact with that content and information. 
+                            </li>
+                            <li style="margin-top: 1%;">
+                                When you publish content or information using the Public setting, it means that
+                                you are allowing everyone to access and use that information and to associate it
+                                with you online identity.
+                            </li><br>
+                        </ul>
+                    </li>
+                    <li>
+                        <b style="font-size: large;">Safety</b>
+                        <ul style="list-style: lower-alpha;">
+                            <li style="margin-top: 1%;">
+                                You will not post unauthorized commercial communications.
+                            </li>
+                            <ul style="list-style: lower-roman;">
+                                <li style="margin-top: 1%;">
+                                    You will not collect users' content, using automated means (such as
+                                    harvesting scripts, robots, or spiders) without our prior permission.
+                                </li>
+                            </ul>
+                            <li style="margin-top: 1%;">
+                                You will not engage in unlawful multi-level marketing, such as a 
+                                <u>pyramid scheme</u>.
+                                <ul style="list-style: lower-roman;">
+                                    <li style="margin-top: 1%;">
+                                        You will not upload malicious code.
+                                    </li>
+                                    <li style="margin-top: 1%;">
+                                        You will not solicit login information or access accounts belonging to
+                                        someone else.
+                                    </li>
+                                    <li style="margin-top: 1%;">
+                                        You will not bully, intimidate, or harass other users.
+                                    </li><br>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </form>
+
+        </main>
+
+        <footer id="footer">
+            <div id="footer_nav" class="clearfix">
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="./terms.html">Our Policy</a>
+                <a href="help.html">Help</a>
+            </div>
+
+            <div id="footer_social" class="clearfix">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Youtube</a>
+            </div>
+            <div id="copyright">
+                <p>&copy;2020 DesiCart.com</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
