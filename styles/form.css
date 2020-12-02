@@ -1,43 +1,43 @@
-#form_container{
+.form_container{
     width: 95%;
-    border: solid 1px #cccccc;
     border-radius: 15px;
     padding: 10px 20px;
     margin: 15px auto;
-    background-color: #f3f3f3;
+    background-color: #f6f6f6;
 }
 
-#form_container h2{
+.form_container h2{
     text-align: center;
     color: green;
     font-size: .9em;
     padding: 10px;
 }
 
-#form_container form >input, .field >input, form >label{
+.form_container form >input, .field >input, form >label{
     display: block;
     width: 100%;
 }
 
-#form_container label, input{
-    font-size: .7em;
+.form_container label, input{
+    font-size: .8em;
     display: inline-block;
     padding: 12px 5px;
 }
 
-#form_container input, #form_container textarea{
-    font-size: .7em;
+.form_container input, .form_container textarea{
+    font-size: .8em;
     color: rgb(17, 17, 17);
     border-radius: 5px;
+    border:none;outline:none;
     box-shadow: 1px 1px 1px -1px grey;
 }
 
 #message_container{margin-bottom: 7px;}
-#form_container textarea{display: block;width: 100%;padding: 5px;}
+.form_container textarea{display: block;width: 100%;padding: 5px;font-family: Verdana, Geneva, Tahoma, sans-serif;padding:10px;}
 
-#form_container label{font-weight: bold;}
+.form_container label{font-weight: bold;}
 
-#form_container form >input , .field >input{
+.form_container form >input , .field >input{
     border:none;
     margin-bottom: 12px;
 }
@@ -57,10 +57,10 @@
 
 .btn:hover{background-color: black;cursor: pointer;}
 
-#form_container input:hover{box-shadow: 0px 2px 1px -1px grey;border:none;outline:none;}
-#form_container input:focus{box-shadow: 0px 2px 1px -1px grey;border:none;outline:none;background: #eeeeee;}
-#form_container input[type=submit]{background-color: green;}
-#form_container input[type=reset]{background-color: red;}
+.form_container input:hover, .form_container textarea:hover{box-shadow: 0px 2px 1px -1px grey;border:none;outline:none;}
+.form_container input:focus, .form_container textarea:focus{box-shadow: 0px 2px 1px -1px grey;border:none;outline:none;background: #eeeeee;}
+.form_container input[type=submit]{background-color: green;}
+.form_container input[type=reset]{background-color: red;}
 
 .fileBtn{
     color:white;
@@ -74,11 +74,11 @@
 
 .fileBtn:hover{background-color: red;cursor:pointer;}
 .buttons{text-align: center;}
-#form_container .clearfix{display: block;clear: both;}
+.form_container .clearfix{display: block;clear: both;}
 
 @media only screen and (min-width: 768px){
 
-    #form_container{
+    .form_container{
         width: 60%;
         clear: both;
     }
@@ -95,19 +95,19 @@
         font-size: .9em !important;
     }
     #message_container{padding-left: 10px;}
-    #form_container label, input, .field >input{
+    .form_container label, input, .field >input{
         font-size: .8em;
         display: inline-block;
         padding: 10px 5px;
     }
-    #form_container form >input , #form_container .field >input{
+    .form_container form >input , .form_container .field >input{
         padding: 12px;
         font-size: .9em;
     }
 
-    #form_container form>label, .trms, .buttons{margin-left: 12px;}
+    .form_container form>label, .trms, .buttons{margin-left: 12px;}
 
-    #form_container h2{
+    .form_container h2{
         font-size: 1em;
     }
 
