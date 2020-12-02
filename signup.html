@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DesiCart - Buying & Selling Made Easy </title>
+    <meta name="description" content="desicart.com is one of the best shopping website. we provide reasonable offers and deals. we provide fastest devlivery even one day deliver is also available but you have to have our membership.">
+    <meta name="keywords" content="desicart, cheapest shopping website, offers on clothes, shop on desicart, flipkart, amazon, snapdeal">
+    <meta name="author" content="Dwarkesh Ahuja, Dalveer Singh, Mandeep Kaur, Virender Singh">
+    <meta name="title" content="DesiCart | Sign Up - Buying & Selling Made Easy ">
+    <title>DesiCart | Sign Up - Buying & Selling Made Easy </title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/section_main.css">
-	<link rel="stylesheet" type="text/css" href="styles/form.css">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <link rel="stylesheet" type="text/css" href="styles/product.css">
     <style> 
+        #main{width:95%;margin: 10px auto;
+            display: grid;
+            grid-template-columns: 60% 30%;
+            justify-content: space-evenly;
+            align-content: start;
+        }
+        .form_container{width: 100%; height: fit-content;}
+        #sign_in .field{width: 100%;}
+        
+        @media only screen and (max-width: 768px){
+            #main{
+                grid-template-columns: 100%;
+            }
+        }
     </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function(){
-            topNav = document.querySelector("#top_nav");
-            document.querySelector("#top_header_menubtn>#button").addEventListener("click", function(){
-                topNav.style.width = "100%";
-                topNav.style.paddingLeft = "30px";
-                topNav.style.paddingRight = "30px";
-            });
-            document.getElementById("close").addEventListener("click", function(){          
-                topNav.style.width = "0%";
-                topNav.style.padding = "0px";
-            });
-        });
-    </script>
 </head>
 <body>
     <div id="root">
@@ -31,20 +36,19 @@
             
             <div id="top_header_logo">
 				<div id="logo">
-					<a href="./index.html"><img style="border-radius: 7px;" src="./images/logo.png" width="100%"></a>
+					<a href="./index.html"><img style="border-radius: 7px;" src="./images/logo.png"></a>
 				</div>	
                 <div id="top_header_menubtn"><img id="button" src="https://www.flaticon.com/svg/static/icons/svg/966/966313.svg"></div>
-                <h1>DesiCart</h1>
+                <h1><a href="index.html">DesiCart</a></h1>
                 <p>Buying & Selling Made Easy</p>
             </div>
-
             <nav id="top_header_nav">
                 <ul class="clearfix">
                     <li class="dropdown">
-                        <a href="#" class="dropbtn">Hi, </a>
+                        <a href="#" class="dropbtn">Hi,</a>
                         <div class="dropdown_content">
                             <ul>
-                                <li><a href="signin.html">Sign In</a></li>
+                                <li><a href="#">Sign In</a></li>
                                 <li><a href="signup.html">Sign Up</a></li>
                             </ul>
                         </div>
@@ -55,15 +59,15 @@
                             <ul>
                                 <li><a href="#">Cart</a></li>
                                 <li><a href="#">Orders</a></li>
+                                <li><a href="#">Settings</a></li>
                             </ul>
                         </div>
                     </li>
                 </ul>
             </nav>
-
             <form id="top_header_search" class="clearfix">
                 <input type="search" name="search" id="searchInput" placeholder="Search here..." />
-                <input type="submit" value="Search" id="searchBtn" />
+                <input type="submit" value="" id="searchBtn" />
             </form>
         </header>
   
@@ -186,8 +190,7 @@
             </ul>
         </nav>
         <main id="main" class="clearfix">
-            
-			            <section id="form_container">
+			<section class="form_container" id="sign_up">
                 <h2 id="signup">Sign Up</h2>
                 <form style="clear: both;" autocomplete="off">
                     <div class="field">
@@ -243,27 +246,81 @@
                     </div>
                 </form>
             </section>
+            <div>
+                <div style="text-align: center;"><br><b>or</b></div>
+            <section class="form_container" id="sign_in">
+                <h2 id="signup">Log In</h2>
+                <form style="clear: both;" autocomplete="off">
 
+                    <div class="field">
+                        <label for="lemail">Email address</label>
+                        <input type="email" id="lemail" name="lemail" placeholder="Enter email address" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="lpassword">Password</label>
+                        <input type="password" id="lpassword" name="lpassword" placeholder="Enter password" required>
+                    </div>
+
+                    <div class="sub"> 
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+
+
+                    <div class="buttons">
+                        <input type="submit" value="Log In" class="btn" style="background-color: rgb(63, 63, 63);">
+                        
+                    </div>
+                </form>
+            </section>
+            </div>
         </main>
-
         <footer id="footer">
+            <div class="title">
+            </div>
             <div id="footer_nav" class="clearfix">
                 <a href="about.html">About Us</a>
                 <a href="contactus.html">Contact Us</a>
                 <a href="terms.html">Our Policy</a>
-                <a href="help.html">Help</a>
+                <a href="contactus.html">Help</a>
+            </div>
+            <div class="title">
+            </div>
+            <div id="footer_social" class="clearfix">
+                <a href="https://www.facebook.com/"><img alt="Facebook" src="https://www.flaticon.com/svg/static/icons/svg/145/145802.svg"><br>Facebook</a>
+                <a href="https://twitter.com/"><img alt="Twitter" src="https://www.flaticon.com/svg/static/icons/svg/145/145812.svg"><br>Twitter</a>
+                <a href="https://www.instagram.com/"><img alt="Instagram" src="https://www.flaticon.com/svg/static/icons/svg/2111/2111463.svg"><br>Instagram</a>
+                <a href="https://www.youtube.com/"><img alt="Youtube" src="https://www.flaticon.com/svg/static/icons/svg/1384/1384060.svg"><br>Youtube</a>
             </div>
 
-            <div id="footer_social" class="clearfix">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-                <a href="#">Youtube</a>
-            </div>
-            <div id="copyright">
+            <div class="title" id="copyright">
                 <p>&copy;2020 DesiCart.com</p>
             </div>
         </footer>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            topNav = document.querySelector("#top_nav");
+            document.querySelector("#top_header_menubtn>#button").addEventListener("click", function(){
+                topNav.style.width = "100%";
+                topNav.style.paddingLeft = "30px";
+                topNav.style.paddingRight = "30px";
+            });
+            document.getElementById("close").addEventListener("click", function(){          
+                topNav.style.width = "0%";
+                topNav.style.padding = "0px";
+            }); 
+
+            items = document.getElementsByClassName("item");
+            for(i=0;i<items.length;i++){
+                items[i].addEventListener('click', function(e){
+                    e.preventDefault();
+                    window.location.href ="product_details.html";
+                });
+            }
+        });
+    </script>
 </body>
+
 </html>
